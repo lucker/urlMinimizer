@@ -4,10 +4,15 @@ namespace App\Entity;
 
 use App\Repository\UrlMinimizerRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\String\ByteString;
 
 #[ORM\Entity(repositoryClass: UrlMinimizerRepository::class)]
+#[ORM\HasLifecycleCallbacks]
 class UrlMinimizer
 {
+    public const IS_ACTIVE = true;
+    public const MINIMIZED_URL_LENGTH = 10;
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
@@ -137,4 +142,15 @@ class UrlMinimizer
 
         return $this;
     }
+    #[ORM\PrePersist]
+    public function setData(): void
+    {
+        $this->minimizedUrl =  ByteString::fromRandom(self::MINIMIZED_URL_LENGTH)
+            ->toString();
+        $this->clickCount = 0;
+        $this->active = self::IS_ACTIVE;
+        $this->updated =  new \DateTime('now');
+        $this->created =  new \DateTime('now');
+    }
+
 }

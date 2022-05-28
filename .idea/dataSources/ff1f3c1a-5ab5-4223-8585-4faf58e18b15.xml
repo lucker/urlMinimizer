@@ -809,7 +809,7 @@ true posixrules
 12380||10|C|G
 12380||-9223372036854775808|U|G
 12380||10|U|G</Grants>
-      <IntrospectionStateNumber>491</IntrospectionStateNumber>
+      <IntrospectionStateNumber>520</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>admin</OwnerName>
     </database>
@@ -4146,15 +4146,15 @@ true posixrules
     <schema id="253" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>491</IntrospectionStateNumber>
+      <IntrospectionStateNumber>520</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>287</StateNumber>
       <OwnerName>admin</OwnerName>
     </schema>
     <sequence id="254" parent="253" name="url_minimizer_id_seq">
       <DataType>bigint|0s</DataType>
-      <ObjectId>16391</ObjectId>
-      <StateNumber>490</StateNumber>
+      <ObjectId>16425</ObjectId>
+      <StateNumber>519</StateNumber>
       <OwnerName>admin</OwnerName>
     </sequence>
     <table id="255" parent="253" name="doctrine_migration_versions">
@@ -4164,8 +4164,8 @@ true posixrules
       <OwnerName>admin</OwnerName>
     </table>
     <table id="256" parent="253" name="url_minimizer">
-      <ObjectId>16393</ObjectId>
-      <StateNumber>490</StateNumber>
+      <ObjectId>16427</ObjectId>
+      <StateNumber>519</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>admin</OwnerName>
     </table>
@@ -4213,81 +4213,91 @@ true posixrules
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>490</StateNumber>
+      <StateNumber>519</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="263" parent="256" name="url">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>490</StateNumber>
+      <StateNumber>519</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="264" parent="256" name="minimized_url">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>490</StateNumber>
+      <StateNumber>519</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="265" parent="256" name="life_time">
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>490</StateNumber>
+      <StateNumber>519</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="266" parent="256" name="click_count">
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>490</StateNumber>
+      <StateNumber>519</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="267" parent="256" name="active">
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
-      <StateNumber>490</StateNumber>
+      <StateNumber>519</StateNumber>
       <TypeId>16</TypeId>
     </column>
     <column id="268" parent="256" name="created">
       <DataType>timestamp(0)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
-      <StateNumber>490</StateNumber>
+      <StateNumber>519</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <column id="269" parent="256" name="updated">
       <DataType>timestamp(0)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>8</Position>
-      <StateNumber>490</StateNumber>
+      <StateNumber>519</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <column id="270" parent="256" name="life_time_ended">
       <DataType>timestamp(0)|0s</DataType>
       <DefaultExpression>NULL::timestamp without time zone</DefaultExpression>
       <Position>9</Position>
-      <StateNumber>490</StateNumber>
+      <StateNumber>519</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <index id="271" parent="256" name="url_minimizer_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16400</ObjectId>
+      <ObjectId>16434</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>490</StateNumber>
+      <StateNumber>519</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="272" parent="256" name="url_minimizer_pkey">
+    <index id="272" parent="256" name="idx_url_minimizer_minimized_url">
+      <ColNames>minimized_url</ColNames>
+      <ObjectId>16436</ObjectId>
+      <StateNumber>519</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="273" parent="256" name="url_minimizer_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16401</ObjectId>
+      <ObjectId>16435</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>490</StateNumber>
-      <UnderlyingIndexId>16400</UnderlyingIndexId>
+      <StateNumber>519</StateNumber>
+      <UnderlyingIndexId>16434</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

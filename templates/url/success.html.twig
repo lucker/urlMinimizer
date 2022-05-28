@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Success {% endblock %}
+
+{% block body %}
+    minimizedUrl = <a href="https://localhost/redirect/{{ urlMinimizer.minimizedUrl }}">https://localhost/redirect/{{ urlMinimizer.minimizedUrl }}</a>
+    statistic = <a href ="https://localhost/statistic/{{ urlMinimizer.minimizedUrl }}">https://localhost/statistic/{{ urlMinimizer.minimizedUrl }}</a>
+{% endblock %}
