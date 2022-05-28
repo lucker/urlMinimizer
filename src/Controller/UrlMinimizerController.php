@@ -63,7 +63,7 @@ class UrlMinimizerController extends AbstractController
 
         if (!$urlMinimizer) {
             throw $this->createNotFoundException(
-                'No record in database'
+                'No active record in database'
             );
         }
 
@@ -110,12 +110,11 @@ class UrlMinimizerController extends AbstractController
         $urlMinimizer = $urlMinimizerRepository
             ->findOneBy([
                 'minimizedUrl' => $minimizedUrl,
-                'active' => true
             ]);
 
         if (!$urlMinimizer) {
             throw $this->createNotFoundException(
-                'No active record in database'
+                'No record in database'
             );
         }
 

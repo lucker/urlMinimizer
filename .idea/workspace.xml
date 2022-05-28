@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e8e3458-d126-4a35-8fed-c3fbe7f81aee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/url/minimizer.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/url/statistic.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/url/success.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff1f3c1a-5ab5-4223-8585-4faf58e18b15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff1f3c1a-5ab5-4223-8585-4faf58e18b15.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ff1f3c1a-5ab5-4223-8585-4faf58e18b15/storage_v2/_src_/database/app.IXoBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ff1f3c1a-5ab5-4223-8585-4faf58e18b15/storage_v2/_src_/database/app.IXoBAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/UrlMinimizerCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20220527120009.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20220527120009.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UrlMinimizerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UrlMinimizerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/UrlMinimizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/UrlMinimizer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/UrlMinimizerType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UrlMinimizerType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/url/success.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/url/success.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +148,7 @@
       <workItem from="1653557200364" duration="7000" />
       <workItem from="1653557212808" duration="1272000" />
       <workItem from="1653561398477" duration="14238000" />
-      <workItem from="1653648205559" duration="17358000" />
+      <workItem from="1653648205559" duration="19434000" />
     </task>
     <servers />
   </component>

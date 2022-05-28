@@ -16,15 +16,9 @@ class UrlMinimizerType extends AbstractType
     {
         $builder
             ->add('url', UrlType::class)
-            //->add('minimizedUrl')
             ->add('lifeTime', NumberType::class, [
                 'label' => 'LifeTime in seconds'
             ])
-            //->add('clickCount')
-            //->add('active')
-            //->add('created')
-            //->add('updated')
-            //->add('lifeTimeEnded')
             ->add('save', SubmitType::class)
         ;
     }
