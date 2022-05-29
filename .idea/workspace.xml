@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2e8e3458-d126-4a35-8fed-c3fbe7f81aee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/UrlMinimizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/UrlMinimizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UrlMinimizerType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UrlMinimizerType.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +146,7 @@
       <workItem from="1653557200364" duration="7000" />
       <workItem from="1653557212808" duration="1272000" />
       <workItem from="1653561398477" duration="14238000" />
-      <workItem from="1653648205559" duration="21631000" />
+      <workItem from="1653648205559" duration="22493000" />
     </task>
     <servers />
   </component>
@@ -176,6 +176,11 @@
           <url>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/AbstractController.php</url>
           <line>88</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Form/UrlMinimizerType.php</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

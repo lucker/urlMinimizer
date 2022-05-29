@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\UrlMinimizerRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\String\ByteString;
 
 #[ORM\Entity(repositoryClass: UrlMinimizerRepository::class)]
@@ -19,9 +20,11 @@ class UrlMinimizer
     private $id;
 
     #[ORM\Column(type: 'string', length: 255)]
+    #[Assert\Url]
     private $url;
 
     #[ORM\Column(type: 'string', length: 255)]
+    #[Assert\Url]
     private $minimizedUrl;
 
     #[ORM\Column(type: 'integer')]
